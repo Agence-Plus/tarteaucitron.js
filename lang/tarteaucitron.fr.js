@@ -1,8 +1,10 @@
 /*global tarteaucitron */
 /* min ready */
 tarteaucitron.lang = {
+    "siteTitle": "Notre site",
+    "readMore": "En savoir plus...",
 
-    "middleBarHead": "☝ 🍪",
+    "middleBarHead": "",
     "adblock": "Bonjour! Ce site joue la transparence et vous donne le choix des services tiers à activer.",
     "adblock_call": "Merci de désactiver votre adblocker pour commencer la personnalisation.",
     "reload": "Recharger la page",
@@ -11,19 +13,20 @@ tarteaucitron.lang = {
     "alertBigClick": "En poursuivant votre navigation,",
     "alertBig": "vous acceptez l'utilisation de services tiers pouvant installer des cookies",
     
-    "alertBigPrivacy": "Ce site utilise des cookies et vous donne le contrôle sur ceux que vous souhaitez activer",
+    "alertBigPrivacyTitle": "Les cookies sur notre site internet",
+    "alertBigPrivacy": "utilise des cookies pour personnaliser le contenu et vous offrir une expérience sur mesure. Vous pouvez gérer vos préférences et en savoir plus en cliquant sur « Réglages » et à tout moment dans le pied de page du site en cliquant sur « Gestion des cookies ».",
     "alertSmall": "Gestion des services",
     "acceptAll": "Tout accepter",
-    "personalize": "Personnaliser",
+    "personalize": "Réglages",
     "close": "Fermer",
-    "closeBanner": "Masquer le bandeau des cookies",
+    "closeBanner": "Continuer sans accepter",
 
     "privacyUrl": "Politique de confidentialité",
 
     "all": "Préférences pour tous les services",
 
     "info": "Protection de votre vie privée",
-    "disclaimer": "En autorisant ces services tiers, vous acceptez le dépôt et la lecture de cookies et l'utilisation de technologies de suivi nécessaires à leur bon fonctionnement.",
+    "disclaimer": "utilise des cookies pour personnaliser le contenu et vous offrir une expérience sur mesure. En autorisant ces services tiers, vous acceptez le dépôt et la lecture de cookies et l'utilisation de technologies de suivi nécessaires à leur bon fonctionnement.",
     "allow": "Autoriser",
     "deny": "Interdire",
     "noCookie": "Ce service ne dépose aucun cookie.",

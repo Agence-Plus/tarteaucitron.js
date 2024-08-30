@@ -3,8 +3,9 @@
   "version": "1.19.0",
   "main": "tarteaucitron.js",
   "description": "Comply to the European cookie law",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@twbs/fantasticon": "^3.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

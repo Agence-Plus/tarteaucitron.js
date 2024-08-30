@@ -1,7 +1,10 @@
 /*global tarteaucitron */
 /* min ready */
 tarteaucitron.lang = {
-    "middleBarHead": "☝ 🍪",
+    "siteTitle": "Unsere Website",
+    "readMore": "Mehr erfahren...",
+
+    "middleBarHead": "",
     "adblock": "Hallo! Diese Seite ist transparent und lässt Ihnen die Wahl der externen Services, die aktiviert werden dürfen.",
     "adblock_call": "Bitte deaktivieren Sie Ihren 'Werbeblocker' um Cookie-Einstellungen vornehmen zu können.",
     "reload": "Seite neu laden",
@@ -10,19 +13,20 @@ tarteaucitron.lang = {
     "alertBigClick": "Wenn Sie diese Webseite benutzen,",
     "alertBig": "stimmen Sie der Benutzung von externen Diensten zu",
     
-    "alertBigPrivacy": "Diese Webseite verwendet 'Cookies' um Inhalte und Anzeigen zu personalisieren und zu analysieren. Bestimmen Sie, welche Dienste benutzt werden dürfen",
+    "alertBigPrivacyTitle": "Cookies auf unserer Website",
+    "alertBigPrivacy": "verwendet Cookies, um Inhalte zu personalisieren und Ihnen ein maßgeschneidertes Erlebnis zu bieten. Sie können Ihre Einstellungen verwalten und mehr erfahren, indem Sie auf « Einstellungen » klicken, und jederzeit in der Fußzeile der Website auf « Cookie-Verwaltung » klicken.",
     "alertSmall": "Datenschutz-Einstellungen",
-    "personalize": "Personalisieren",
+    "personalize": "Einstellungen",
     "acceptAll": "Alle akzeptieren",
     "close": "Schließen",
-    "closeBanner": "Cookies-Banner ausblenden",
+    "closeBanner": "Ohne Akzeptieren fortfahren",
 
     "privacyUrl": "Datenschutzbestimmungen",
     
     "all": "Einstellungen für alle Dienste",
 
     "info": "Schutz der Privatsphäre",
-    "disclaimer": "Wenn Sie diese Dienste nutzen, erlauben Sie deren 'Cookies' und Tracking-Funktionen, die zu ihrer ordnungsgemäßen Funktion notwendig sind.",
+    "disclaimer": "verwendet Cookies, um Inhalte zu personalisieren und Ihnen ein maßgeschneidertes Erlebnis zu bieten. Wenn Sie diese Dienste nutzen, erlauben Sie deren 'Cookies' und Tracking-Funktionen, die zu ihrer ordnungsgemäßen Funktion notwendig sind.",
     "allow": "Erlauben",
     "deny": "Ablehnen",
     "noCookie": "Dieser Dienst nutzt keine 'Cookies'.",

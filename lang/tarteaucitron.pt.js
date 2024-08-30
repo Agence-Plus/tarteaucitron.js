@@ -1,7 +1,10 @@
 /*global tarteaucitron */
 /* min ready */
 tarteaucitron.lang = {
-    "middleBarHead": "☝ 🍪",
+    "siteTitle": "Nosso site",
+    "readMore": "Saiba mais...",
+    
+    "middleBarHead": "",
     "adblock": "Olá! Em uma ação de transparência, este site permite que você escolha quais serviços de terceiros ativar.",
     "adblock_call": "Por favor, desative seu bloqueador de publicidades para poder personalizar.",
     "reload": "Atualizar esta página",
@@ -10,18 +13,19 @@ tarteaucitron.lang = {
     "alertBigClick": "Se você continuar a navegação neste site,",
     "alertBig": "você estará aceitando todos os serviços de terceiros",
     
-    "alertBigPrivacy": "Este site utiliza cookies e dá-lhe controle sobre o que quer ativar",
+    "alertBigPrivacyTitle": "Cookies no nosso site",
+    "alertBigPrivacy": "utiliza cookies para personalizar o conteúdo e oferecer-lhe uma experiência personalizada. Pode gerir as suas preferências e saber mais clicando em « Configurações » e a qualquer momento no rodapé do site clicando em « Gestão de cookies ».",
     "alertSmall": "Gerenciar serviços",
-    "personalize": "Personalizar",
+    "personalize": "Configurações",
     "acceptAll": "OK, aceitar tudo",
     "close": "Fechar",
-    "closeBanner": "Ocultar banner de cookies",
+    "closeBanner": "Continuar sem aceitar",
 
     "privacyUrl": "Política de Privacidade",
 
     "all": "Definições dos serviços",
     "info": "Proteger sua privacidade",
-    "disclaimer": "Ao aceitar os serviços terceiros, você aceita o uso de cookies em conjunto a tecnologias de rastreamento que lhe são necessárias para funcionar",
+    "disclaimer": "utiliza cookies para personalizar o conteúdo e oferecer-lhe uma experiência personalizada. Ao aceitar os serviços terceiros, você aceita o uso de cookies em conjunto a tecnologias de rastreamento que lhe são necessárias para funcionar",
     "allow": "Autorizar",
     "deny": "Recusar",
     "noCookie": "Este serviço não usa cookies.",

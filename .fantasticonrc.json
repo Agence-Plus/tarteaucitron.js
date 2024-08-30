@@ -1,0 +1,14 @@
+{
+    "inputDir": "./icons/svgs",
+    "outputDir": "./icons",
+    "fontsUrl": "../icons",
+    "fontTypes": ["woff2", "woff"],
+    "assetTypes": ["css","scss", "html"],
+    "selector": ".icon",
+    "formatOptions": {
+        "svg": {
+            "centerHorizontally": true,
+            "centerVertically": true
+        }
+    }
+}

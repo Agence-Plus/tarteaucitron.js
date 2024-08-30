@@ -291,7 +291,7 @@ html body #tarteaucitronRoot div#tarteaucitronSave {
     border-spacing: 0;
 }
 
-#tarteaucitronRoot a:focus-visible, #tarteaucitronRoot button:focus-visible {
+#tarteaucitronRoot a:focus-visible, #tarteaucitronRoot button:focus-visible, .tarteaucitronSwitch:focus-visible + .tarteaucitronSwitchToggle {
     outline: 3px dashed #3d86d8;
 }
 

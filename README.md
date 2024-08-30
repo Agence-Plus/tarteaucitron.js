@@ -92,7 +92,7 @@ tarteaucitron.services.mycustomservice = {
   "name": "MyCustomService",
   "needConsent": true,
   "cookies": ['cookie', 'cookie2'],
-  "readmoreLink": "/custom_read_more", // If you want to change readmore link
+  "readmoreLink": "/custom_readMore", // If you want to change readmore link
   "js": function () {
     "use strict";
     // When user allow cookie

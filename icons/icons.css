@@ -1,0 +1,27 @@
+@font-face {
+  font-display: block;
+  font-family: "icons";
+  src: url("../icons/icons.woff2?60c70eefb55d56b531a5ec6e9166d1b5") format("woff2"),
+url("../icons/icons.woff?60c70eefb55d56b531a5ec6e9166d1b5") format("woff");
+}
+
+.icon::before {
+  font-family: icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon.icon-checkmark::before {
+  content: "\f101";
+}
+.icon.icon-cross::before {
+  content: "\f102";
+}
+.icon.icon-long-arrow-right::before {
+  content: "\f103";
+}

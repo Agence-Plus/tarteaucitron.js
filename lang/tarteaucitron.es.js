@@ -1,7 +1,10 @@
 /*global tarteaucitron */
 /* min ready */
 tarteaucitron.lang = {
-    "middleBarHead": "☝ 🍪",
+    "siteTitle": "Nuestro sitio",
+    "readMore": "Saber más...",
+    
+    "middleBarHead": "",
     "adblock": "¡Hola! Este sitio web es transparente y te da la opción de activar los servicios de terceros.",
     "adblock_call": "Por favor deshabilita tu AdBlocker para empezar a personalizar los servicios.",
     "reload": "Actualizar esta página",
@@ -10,19 +13,20 @@ tarteaucitron.lang = {
     "alertBigClick": "Si continuas navegando por este sitio web,",
     "alertBig": "estás permitiendo servicios terceros",
     
-    "alertBigPrivacy": "Este sitio web usa cookies y te permite controlar las que deseas activar",
+    "alertBigPrivacyTitle": "Las cookies en nuestro sitio web",
+    "alertBigPrivacy": "utiliza cookies para personalizar el contenido y ofrecerle una experiencia a medida. Puede gestionar sus preferencias y obtener más información haciendo clic en « Configuración » y en cualquier momento en el pie de página del sitio haciendo clic en « Gestión de cookies ».",
     "alertSmall": "Gestionar servicios",
-    "personalize": "Personalizar",
+    "personalize": "Configuración",
     "acceptAll": "OK, aceptar todas",
     "close": "Cerrar",
-    "closeBanner": "Ocultar la banner de cookies",
+    "closeBanner": "Continuar sin aceptar",
 
     "privacyUrl": "Política de privacidad",
     
     "all": "Ajustes para todos los servicios",
 
     "info": "Protegiendo tu privacidad",
-    "disclaimer": "Aceptando estos servicios de terceros, estás aceptando sus cookies y el uso de tecnologías de rastreo necesarias para su correcto funcionamiento.",
+    "disclaimer": "utiliza cookies para personalizar el contenido y ofrecerle una experiencia a medida. Aceptando estos servicios de terceros, estás aceptando sus cookies y el uso de tecnologías de rastreo necesarias para su correcto funcionamiento.",
     "allow": "Permitir",
     "deny": "Denegar",
     "noCookie": "Este servicio no usa cookies.",
