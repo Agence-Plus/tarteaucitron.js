@@ -313,6 +313,10 @@ div#tarteaucitronServices {
     margin-top: 0 !important;
 }
 
+#tarteaucitronRoot #tarteaucitronNoServicesTitle {
+    font-size: 14px;
+}
+
 @media screen and (max-width: 900px) {
     html div#tarteaucitronAlertBig button {
         margin: 0 !important;
