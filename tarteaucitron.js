@@ -1759,13 +1759,13 @@ var tarteaucitron = {
             var scrollbarMarginRight = 10,
                 scrollbarWidthParent,
                 scrollbarWidthChild,
-                servicesHeight,
+                // servicesHeight,
                 e = window,
                 a = 'inner',
                 windowInnerHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
                 mainTop,
                 mainHeight,
-                closeButtonHeight,
+                // closeButtonHeight,
                 headerHeight,
                 cookiesListHeight,
                 cookiesCloseHeight,
@@ -1804,11 +1804,11 @@ var tarteaucitron = {
 
                     // calculate
                     mainHeight = document.getElementById('tarteaucitron').offsetHeight;
-                    closeButtonHeight = document.getElementById('tarteaucitronClosePanel').offsetHeight;
+                    // closeButtonHeight = document.getElementById('tarteaucitronClosePanel').offsetHeight;
 
                     // apply
-                    servicesHeight = (mainHeight - closeButtonHeight + 4);
-                    tarteaucitron.userInterface.css('tarteaucitronServices', 'height', servicesHeight + 'px');
+                    // servicesHeight = (mainHeight - closeButtonHeight + 4);
+                    tarteaucitron.userInterface.css('tarteaucitronServices', 'height', mainHeight + 'px');
                     tarteaucitron.userInterface.css('tarteaucitronServices', 'overflow-x', 'auto');
                 }
 
@@ -1897,16 +1897,39 @@ var tarteaucitron = {
 
             var d = new Date(),
                 time = d.getTime(),
+                formatedTime = d.toLocaleString('fr-FR', { timeZoneName: 'short' }),
                 expireTime = time + timeExpire, // 365 days
-                regex = new RegExp("!" + key + "=(wait|true|false)", "g"),
-                cookie = tarteaucitron.cookie.read().replace(regex, ""),
-                value = tarteaucitron.parameters.cookieName + '=' + cookie + '!' + key + '=' + status,
-                domain = (tarteaucitron.parameters.cookieDomain !== undefined && tarteaucitron.parameters.cookieDomain !== '') ? '; domain=' + tarteaucitron.parameters.cookieDomain : '',
-                secure = location.protocol === 'https:' ? '; Secure' : '';
+                regex0 = /!id=([a-z0-9-]+)/,
+                regex1 = new RegExp("!id=[a-z0-9-]+", "g"),
+                regex2 = new RegExp("!" + key + "=(wait|true|false)", "g"),
+                cookie = tarteaucitron.cookie.read(),
+                idMatch = cookie.match(regex0),
+                id = '';
+            if (Array.isArray(idMatch) && idMatch.length > 1) id = idMatch[1];
+            else {
+                // generate Unique ID (https://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid)
+                id = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                    return v.toString(16);
+                });
+            }
+            cookie = cookie.replace(regex1, "").replace(regex2, "") + '!' + key + '=' + status;
+            var value = tarteaucitron.parameters.cookieName + '=' + cookie,
+            domain = (tarteaucitron.parameters.cookieDomain !== undefined && tarteaucitron.parameters.cookieDomain !== '') ? '; domain=' + tarteaucitron.parameters.cookieDomain : '',
+            secure = location.protocol === 'https:' ? '; Secure' : '';
 
             d.setTime(expireTime);
-            document.cookie = value + '; expires=' + d.toGMTString() + '; path=/' + domain + secure + '; samesite=lax';
+            document.cookie = value + '; expires=' + d.toGMTString() + '; path=/' + domain + secure + '; samesite=none';
 
+            if (typeof status === 'boolean') {
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/consent');
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function () {
+                    if (xhr.status !== 200) console.error('Request failed.  Returned status of ' + xhr.status);
+                };
+                xhr.send(encodeURI("action=update&id=" + id + "&client-time=" + formatedTime + "&value=" + cookie).replace(/\+/g, '%2b'));
+            }
             tarteaucitron.sendEvent('tac.consent_updated');
         },
         "read": function () {
