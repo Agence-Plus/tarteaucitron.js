@@ -913,6 +913,7 @@ var tarteaucitron = {
 
                     // Setup events
                     tarteaucitron.addClickEventToId("tarteaucitronCloseCross", function () {
+                        tarteaucitron.userInterface.respondAll(false);
                         tarteaucitron.userInterface.closeAlert();
                     });
                     tarteaucitron.addClickEventToId("tarteaucitronPersonalize", function () {
