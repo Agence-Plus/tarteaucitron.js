@@ -1218,9 +1218,9 @@ var tarteaucitron = {
     },
     "setConsent": function (id, status) {
         if (status === true) {
-            tarteaucitron.userInterface.respond(document.getElementById(id + 'Allowed'), true);
+            tarteaucitron.userInterface.respond(document.getElementById(id + (tarteaucitron.parameters.useSwitches ? 'Switch' : 'Allowed')), true);
         } else if (status === false) {
-            tarteaucitron.userInterface.respond(document.getElementById(id + 'Denied'), false);
+            tarteaucitron.userInterface.respond(document.getElementById(id + (tarteaucitron.parameters.useSwitches ? 'Switch' : 'Denied')), false);
         }
     },
     "userInterface": {
